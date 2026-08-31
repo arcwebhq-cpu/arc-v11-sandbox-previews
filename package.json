@@ -1,0 +1,20 @@
+{
+  "name": "arc-v11-sandbox-preview-seed",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.2 <23"
+  },
+  "scripts": {
+    "build:pages": "node scripts/build-pages.mjs",
+    "check:pages": "node scripts/build-pages.mjs --check",
+    "scan:secrets": "node scripts/secret-scan.mjs",
+    "test:contracts": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate-preview.mjs",
+    "verify:event": "node scripts/verify-event.mjs",
+    "verify:pages-mode": "node scripts/verify-pages-mode.mjs",
+    "test": "npm run validate && npm run scan:secrets && npm run check:pages && npm run test:contracts"
+  }
+}
+

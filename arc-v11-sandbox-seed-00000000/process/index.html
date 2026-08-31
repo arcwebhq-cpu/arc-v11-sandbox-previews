@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="arc-template-version" content="11.0">
+  <meta name="arc-site-contract" content="arc-five-page-site-v1">
+  <meta name="arc-page-key" content="process">
+  <meta name="arc-page-path" content="process/index.html">
+  <meta name="arc-page-title" content="Process | ARC V11 Sandbox Seed">
+  <meta name="description" content="Synthetic process page describing bound sandbox verification stages.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; script-src-attr 'none'; connect-src 'none'; font-src 'self' data:; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'">
+  <title>Process | ARC V11 Sandbox Seed</title>
+  <style>:root{color-scheme:dark;--bg:#08111f;--panel:#111d31;--ink:#eef5ff;--muted:#9eb0c9;--line:#2d3e58;--accent:#7dd3fc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}header,main,footer{width:min(900px,calc(100% - 40px));margin:auto}header{padding:24px 0;border-bottom:1px solid var(--line)}nav{display:flex;flex-wrap:wrap;gap:16px}a{color:var(--accent)}main{min-height:65vh;padding:72px 0}p{color:var(--muted);max-width:64ch}.status{display:inline-block;padding:5px 10px;border:1px solid var(--line);border-radius:999px}footer{padding:24px 0;border-top:1px solid var(--line);color:var(--muted)}</style>
+</head>
+<body data-arc-site-mode="preview" data-arc-page="process">
+  <header><nav class="nav-links" aria-label="Main menu"><a href="../">Home</a><a href="../services/">Services</a><a href="../about/">About</a><a href="./" aria-current="page">Process</a><a href="../contact/">Contact</a></nav></header>
+  <main><p class="status">PUBLIC SANDBOX · OFF</p><h1>Bound source-to-deployment checks</h1><p>The sandbox flow verifies immutable source bytes, one revision commit, an exact head, an allowlisted check, a bound merge, and the deployed bytes.</p></main>
+  <footer>ARC V11 sandbox seed</footer>
+  <script>
+    (()=>{
+      if(document.body.dataset.arcSiteMode!=="preview")return;
+      document.querySelectorAll("form").forEach(form=>{
+        const note=document.createElement("p");
+        note.className="arc-preview-form-note";
+        note.setAttribute("role","status");
+        note.textContent="Preview mode — this form will accept real requests only after launch.";
+        form.append(note);
+        form.addEventListener("submit",event=>{
+          event.preventDefault();
+          note.textContent="Preview confirmed. No information was submitted.";
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "schema": "arc-v11-sandbox-public-preview-manifest-v1",
+  "repository": "arcwebhq-sandbox/arc-v11-sandbox-previews",
+  "repository_id": 1351889100,
+  "base_branch": "main",
+  "bootstrap_source_sha": "af590c1ae9d40b97bebc4645e6a0921baacce3e2",
+  "pages": {
+    "build_type": "workflow",
+    "artifact_directory": ".pages-dist",
+    "artifact_name": "github-pages",
+    "environment": "github-pages",
+    "public_base_url": "https://arcwebhq-sandbox.github.io/arc-v11-sandbox-previews"
+  },
+  "revision": {
+    "head_branch_prefix": "arc-v11-sandbox/revision/",
+    "required_check_name": "ARC sandbox preview five-page contract",
+    "preview_folder": "arc-v11-sandbox-seed-00000000",
+    "lead_route_mode": "not_required",
+    "trusted_inline_script_sha256": "45ade959420903058cd2ca3845a8ed4d21bcf8db0294d602a2404237f65b24cc",
+    "logical_page_paths": [
+      "index.html",
+      "services/index.html",
+      "about/index.html",
+      "process/index.html",
+      "contact/index.html"
+    ],
+    "binding_page_paths": [
+      "about/index.html",
+      "contact/index.html",
+      "index.html",
+      "process/index.html",
+      "services/index.html"
+    ],
+    "repository_page_paths": [
+      "arc-v11-sandbox-seed-00000000/about/index.html",
+      "arc-v11-sandbox-seed-00000000/contact/index.html",
+      "arc-v11-sandbox-seed-00000000/index.html",
+      "arc-v11-sandbox-seed-00000000/process/index.html",
+      "arc-v11-sandbox-seed-00000000/services/index.html"
+    ]
+  }
+}
